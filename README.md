@@ -36,6 +36,7 @@ Note: printerID or printerJobID is obtained from lpstat command.
 #### Find full path name of a file
 `readlink -f {filename.txt}` [Source](https://stackoverflow.com/questions/5265702/how-to-get-full-path-of-a-file)
 #### Convert files to pdf 
-This uses ImageMagick - download using `sudo apt install imagemagick`<br>
 `convert image1.jpg image2.png outputFileName.pdf` [Source](https://askubuntu.com/questions/303849/create-a-single-pdf-from-multiple-text-images-or-pdf-files) <br>
-If error (Permission Denied), modify policy.xml PDF rights from "none" to "read|write" per [these instructions.](https://stackoverflow.com/questions/42928765/convertnot-authorized-aaaa-error-constitute-c-readimage-453/52661288#52661288).
+Note: this uses ImageMagick. May need to download first:
+`sudo apt install imagemagick`<br>
+If converting to pdf results in a permission denied error, modify policy.xml PDF rights from "none" to "read|write" per [these instructions.](https://stackoverflow.com/questions/42928765/convertnot-authorized-aaaa-error-constitute-c-readimage-453/52661288#52661288).
