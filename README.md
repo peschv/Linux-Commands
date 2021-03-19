@@ -5,6 +5,7 @@ Useful Terminal commands for Ubuntu.
 2. [Printer](#printer)
     1. [Cancel queue](#cancel-queue)
 3. [Networking](#networking)
+4. [Search](#search)
 
 ## Video
 #### Remove all audio from video file - [Source](https://unix.stackexchange.com/questions/6402/how-to-remove-an-audio-track-from-an-mp4-video-file)
@@ -26,3 +27,6 @@ Note: printerID or printerJobID is obtained from lpstat command.
 ## Networking
 #### Restart network manager - [Source](https://linuxconfig.org/how-to-restart-network-on-ubuntu-18-04-bionic-beaver-linux)
 `sudo service network-manager restart`
+## Search
+#### Find full path of file name - [Source](https://stackoverflow.com/questions/5265702/how-to-get-full-path-of-a-file)
+`readlink -f {filename.txt}`
