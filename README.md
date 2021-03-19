@@ -3,7 +3,7 @@ Useful Terminal commands for Ubuntu.
 ## Index
 1. [Video](#video)
 2. [Printer](#printer)
-    1. [Cancel queue](#cancel-queue)
+    1. [Cancel queue](#cancel_queue)
 3. [Networking](#networking)
 
 ## Video
