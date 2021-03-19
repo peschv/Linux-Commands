@@ -3,7 +3,7 @@ Useful Terminal commands for Ubuntu.
 ## Index
 1. [Video](#video)
 2. [Printer](#printer)
-    1. [Cancel queue](#cancel_queue)
+    1. [Cancel queue](#cancel-queue)
 3. [Networking](#networking)
 
 ## Video
@@ -16,8 +16,9 @@ or <br>
 `lpstat -o`
 #### Display printer info
 `lpstat -t`
-#### Cancel queue - [Source](https://askubuntu.com/questions/350334/how-do-i-clear-a-print-queue-in-ubuntu)
+#### Cancel queue
 Note: printerID or printerJobID is obtained from lpstat command.
+[Source](https://askubuntu.com/questions/350334/how-do-i-clear-a-print-queue-in-ubuntu)
 ##### -- cancel all jobs
 `cancel -a {printerID}`
 ##### -- cancel single job
