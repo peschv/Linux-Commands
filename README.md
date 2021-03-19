@@ -1,5 +1,5 @@
 # Linux-Commands
-Useful Terminal commands for Ubuntu.
+Useful Terminal commands for Ubuntu (so that I don't have to keep Googling it).
 ## Index
 1. [Video](#video)
 2. [Printer](#printer)
