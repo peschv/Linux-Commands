@@ -15,6 +15,7 @@ Useful Terminal commands for Ubuntu (so that I don't have to keep Googling it).
 
 ## Video
 #### Remove all audio from video file
+`cd` into relevant folder containing the input file <br>
 `ffmpeg -i input_file.mp4 -vcodec copy -an output_file.mp4` [Source](https://unix.stackexchange.com/questions/6402/how-to-remove-an-audio-track-from-an-mp4-video-file)
 ## Printer
 #### Display queue
