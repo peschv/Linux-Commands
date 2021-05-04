@@ -12,6 +12,7 @@ Useful Terminal commands for Ubuntu (so that I don't have to keep Googling it).
 5. [Files](#files)
     1. [Find full path name of a file](#find-full-path-name-of-a-file)
     2. [Convert files to pdf](#convert-files-to-pdf)
+    3. [Merge pdf files](#merge-pdf-files)
 
 ## Video
 #### Remove all audio from video file
@@ -42,3 +43,5 @@ Note: printerID or printerJobID is obtained from lpstat command.
 Note: this uses ImageMagick. May need to download first:
 `sudo apt install imagemagick`<br>
 If converting to pdf results in a permission denied error, modify policy.xml PDF rights from "none" to "read|write" per [these instructions](https://stackoverflow.com/questions/42928765/convertnot-authorized-aaaa-error-constitute-c-readimage-453/52661288#52661288).
+#### Merge pdf files
+`pdfunite file1.pdf file2.pdf file3.pdf mergedFile.pdf` [Source](https://stackoverflow.com/questions/2507766/merge-convert-multiple-pdf-files-into-one-pdf)
