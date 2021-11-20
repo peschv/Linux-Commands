@@ -13,6 +13,8 @@ Useful Terminal commands for Ubuntu (so that I don't have to keep Googling it).
     1. [Find full path name of a file](#find-full-path-name-of-a-file)
     2. [Convert files to pdf](#convert-files-to-pdf)
     3. [Merge pdf files](#merge-pdf-files)
+6. [Scripts](#scripts)
+    1. [Watch what script does](#watch-what-script-does)
 
 ## Video
 #### Remove all audio from video file
@@ -29,19 +31,23 @@ or <br>
 Note: printerID or printerJobID is obtained from lpstat command.
 [Source](https://askubuntu.com/questions/350334/how-do-i-clear-a-print-queue-in-ubuntu)
 ##### -- cancel all jobs
-`cancel -a {printerID}`
+`cancel -a printer_ID`
 ##### -- cancel single job
-`cancel {printerJobID}`
+`cancel printer_job_ID`
 ## Networking
 #### Restart network manager
 `sudo service network-manager restart` [Source](https://linuxconfig.org/how-to-restart-network-on-ubuntu-18-04-bionic-beaver-linux)
 ## Files
 #### Find full path name of a file
-`readlink -f {filename.txt}` [Source](https://stackoverflow.com/questions/5265702/how-to-get-full-path-of-a-file)
+`readlink -f filename.txt` [Source](https://stackoverflow.com/questions/5265702/how-to-get-full-path-of-a-file)
 #### Convert files to pdf 
-`convert image1.jpg image2.png outputFileName.pdf` [Source](https://askubuntu.com/questions/303849/create-a-single-pdf-from-multiple-text-images-or-pdf-files) <br>
+`convert image1.jpg image2.png output_filename.pdf` [Source](https://askubuntu.com/questions/303849/create-a-single-pdf-from-multiple-text-images-or-pdf-files) <br>
 Note: this uses ImageMagick. May need to download first:
 `sudo apt install imagemagick`<br>
 If converting to pdf results in a permission denied error, modify policy.xml PDF rights from "none" to "read|write" per [these instructions](https://stackoverflow.com/questions/42928765/convertnot-authorized-aaaa-error-constitute-c-readimage-453/52661288#52661288).
 #### Merge pdf files
-`pdfunite file1.pdf file2.pdf file3.pdf mergedFile.pdf` [Source](https://stackoverflow.com/questions/2507766/merge-convert-multiple-pdf-files-into-one-pdf)
+`pdfunite file1.pdf file2.pdf file3.pdf merged_file.pdf` [Source](https://stackoverflow.com/questions/2507766/merge-convert-multiple-pdf-files-into-one-pdf)
+## Scripts
+#### Watch what script does
+`bash -x script_name.sh` [Source](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_02_03.html) <br>
+This runs the script in debug mode.
